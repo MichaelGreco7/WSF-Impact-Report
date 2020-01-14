@@ -12,16 +12,16 @@ class LandingPage extends Component {
         </div>
         <div className={classes.titleStatementContainer}>
           <div className={classes.cornerTitle}>
-            <img src="#"></img>
+            <img className={classes.img} src="#"></img>
             <p>
               Impact <br /> Report
             </p>
           </div>
           <div className={classes.missionStatement}>
-            <p>
+            <p className={classes.msTitle}>
               Adaptive <br /> Surf <br /> Therapy
             </p>
-            <p>
+            <p className={classes.msPara}>
               Warrior Surf is commited to promoting physical and metal wellness
               for veterans and their families through adaptive surf therapy
             </p>
