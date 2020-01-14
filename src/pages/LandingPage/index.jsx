@@ -7,9 +7,23 @@ class LandingPage extends Component {
     const classes = this.props.classes;
     return (
       <div className={classes.container}>
-        <div className={classes.verticleLogo}>Warrior Surf Foundation</div>
-        <div className={classes.cornerTitle}></div>
-        <div className={classes.missionStatement}></div>
+        <div className={classes.verticleLogo}>
+          <p>Warrior Surf Foundation</p>
+        </div>
+        <div className={classes.cornerTitle}>
+          <p>
+            Impact <br /> Report
+          </p>
+        </div>
+        <div className={classes.missionStatement}>
+          <p>
+            Adaptive <br /> Surf <br /> Therapy
+          </p>
+          <p>
+            Warrior Surf is commited to promoting physical and metal wellness
+            for veterans and their families through adaptive surf therapy
+          </p>
+        </div>
       </div>
     );
   }

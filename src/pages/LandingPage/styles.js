@@ -1,11 +1,11 @@
 const styles = theme => ({
   container: {
     height: "100vh",
-    backgroundColor: "grey"
+    backgroundColor: "grey",
+    display: "flex"
   },
-
   verticleLogo: {
-    height: "100vh",
+    // height: "100vh",
     backgroundColor: "black",
     width: 150,
     color: "white",
@@ -13,7 +13,27 @@ const styles = theme => ({
     // transform: "rotate(-90deg)"
     display: "flex",
     textAlign: "center",
-    alignItems: "center"
+    alignItems: "center",
+    border: "blue solid 1px"
+  },
+  cornerTitle: {
+    backgroundColor: "black",
+    color: "white",
+    textTransform: "uppercase",
+    border: "red solid 1px",
+    height: 100,
+    width: 250,
+    display: "flex",
+    flexDirection: "column"
+
+    // justifyContent: "center",
+    // alignItems: "center"
+  },
+  missionStatement: {
+    color: "white",
+    border: "blue solid 1px",
+    height: 200,
+    width: 200
   }
 });
 
