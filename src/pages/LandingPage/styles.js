@@ -2,20 +2,20 @@ const styles = theme => ({
   container: {
     height: "100vh",
     backgroundColor: "grey",
-    display: "flex"
+    display: "flex",
+    justifyContent: "space-between"
   },
   verticleLogo: {
-    // height: "100vh",
     backgroundColor: "black",
-    width: 150,
     color: "white",
     textTransform: "uppercase",
-    // transform: "rotate(-90deg)"
+    border: "blue solid 1px",
+    marginLeft: 50,
     display: "flex",
-    textAlign: "center",
-    alignItems: "center",
-    border: "blue solid 1px"
+    justifyContent: "center",
+    alignItems: "center"
   },
+
   cornerTitle: {
     backgroundColor: "black",
     color: "white",
@@ -24,16 +24,21 @@ const styles = theme => ({
     height: 100,
     width: 250,
     display: "flex",
-    flexDirection: "column"
+    justifyContent: "space-around"
 
     // justifyContent: "center",
     // alignItems: "center"
   },
   missionStatement: {
     color: "white",
-    border: "blue solid 1px",
+    border: "green solid 1px",
     height: 200,
-    width: 200
+    width: 250
+  },
+  titleStatementContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between"
   }
 });
 
