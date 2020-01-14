@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
+import styles from "./styles";
+import { withStyles } from "@material-ui/core/styles";
 
-export default function SimpleContainer() {
-  return (
-    <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <Typography
-          component="div"
-          style={{ backgroundColor: "#cfe8fc", height: "100vh" }}
-        />
-      </Container>
-    </React.Fragment>
-  );
+class LandingPage extends Component {
+  render() {
+    const classes = this.props.classes;
+    return (
+      <div className={classes.container}>
+        <div className={classes.verticleLogo}>Warrior Surf Foundation</div>
+        <div className={classes.cornerTitle}></div>
+        <div className={classes.missionStatement}></div>
+      </div>
+    );
+  }
 }
+
+export default withStyles(styles)(LandingPage);
