@@ -1,32 +1,17 @@
 import React, { Component } from "react";
 import styles from "./styles";
 import { withStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import Typography from "@material-ui/core/Typography";
 
 class LandingPage extends Component {
   render() {
     const classes = this.props.classes;
     return (
       <div className={classes.container}>
-        <div className={classes.verticleLogo}>
-          <p className={classes.logo}>Warrior Surf Foundation</p>
-        </div>
-        <div className={classes.titleStatementContainer}>
-          <div className={classes.cornerTitle}>
-            <img className={classes.img} src="#"></img>
-            <p>
-              Impact <br /> Report
-            </p>
-          </div>
-          <div className={classes.missionStatement}>
-            <p className={classes.msTitle}>
-              Adaptive <br /> Surf <br /> Therapy
-            </p>
-            <p className={classes.msPara}>
-              Warrior Surf is commited to promoting physical and metal wellness
-              for veterans and their families through adaptive surf therapy
-            </p>
-          </div>
-        </div>
+        <Card className={classes.card1}>
+          <p className={classes.name}>Warrior Surf Foundation</p>
+        </Card>
       </div>
     );
   }
